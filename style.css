@@ -135,7 +135,7 @@ article:hover {
 /* Footer */
 footer {
   background-color: #1a1a1a;
-  text-align: center;
+  text-align: right;
   padding: 2em;
   margin-top: 3em;
   border-top: 1px solid #3d3d3d;
@@ -147,5 +147,6 @@ footer {
   height: 50px;
 
 }
+
 
 
