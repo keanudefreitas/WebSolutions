@@ -37,6 +37,16 @@ header {
   margin-top: 0.5em;
   opacity: 0.9;
 }
+/* ✅ Mobile adjustments */
+@media (max-width: 600px) {
+  .name {
+    font-size: 2em;   /* smaller on phones */
+  }
+
+  .tagline {
+    font-size: 1em;   /* scale tagline down too */
+  }
+}
 
 /* Navigation */
 nav {
@@ -131,4 +141,5 @@ footer {
   border-top: 1px solid #3d3d3d;
   color: #888;
   font-size: 0.9em;
+
 }
