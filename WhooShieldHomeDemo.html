@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhooShield | Integrated VPN, SSL & Cybersecurity Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-primary { background-color: #003B73; }
+        .bg-secondary { background-color: #F28C28; }
+        .text-primary { color: #003B73; }
+        .text-secondary { color: #F28C28; }
+        .border-secondary { border-color: #F28C28; }
+
+        .elementor-button {
+  background-color: #0056B3 !important; /* Blue */
+  color: #fff !important;              /* White text */
+  border-radius: 8px !important;       /* Rounded rectangle */
+  padding: 12px 24px !important;       /* Spacing */
+  font-weight: bold !important;
+  transition: background-color 0.3s ease;
+}
+
+.elementor-button:hover {
+  background-color: #003B73 !important; /* Darker blue on hover */
+}
+        
+        .nav-scrolled {
+            background: linear-gradient(90deg, #003B73 0%, #F28C28 100%) !important;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            padding-top: 0.75rem !important;
+            padding-bottom: 0.75rem !important;
+        }
+        .nav-scrolled .nav-link { color: #003B73 !important; }
+        .nav-scrolled .nav-logo { color: #003B73 !important; }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-down { animation: fadeInDown 0.3s ease-out forwards; }
+
+
+        
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="fixed w-full z-50 transition-all duration-300 py-5">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+<div class="flex items-center space-x-2">
+<img 
+  src="https://whooshield.com/wp-content/uploads/2024/04/logo1r.png" 
+  alt="WhooShield Logo" 
+  class="h-12 w-auto max-w-[200px] md:max-w-[250px] lg:max-w-[300px]"
+>
+</div>
+
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="nav-link text-sm font-semibold uppercase tracking-wider text-white hover:text-secondary transition-colors">Home</a>
+                    <a href="https://whooshield.com/clients/knowledgebase" class="nav-link text-sm font-semibold uppercase tracking-wider text-white hover:text-secondary transition-colors">Knowledgebase</a>
+                    <a href="#" class="nav-link text-sm font-semibold uppercase tracking-wider text-white hover:text-secondary transition-colors">Network Status</a>
+                    <a href="#" class="nav-link text-sm font-semibold uppercase tracking-wider text-white hover:text-secondary transition-colors">Affiliates</a>
+                    <a href="https://whooshield.com/clients/contact.php" class="nav-link text-sm font-semibold uppercase tracking-wider text-white hover:text-secondary transition-colors">Contact Us</a>
+                    <a href="https://whooshield.com/clients/login" class="nav-link text-sm font-semibold uppercase tracking-wider text-white hover:text-secondary transition-colors">Log In</a>
+                    <a href="https://whooshield.com/clients/register.php" class="nav-link text-sm font-semibold uppercase tracking-wider text-white hover:text-secondary transition-colors">Register</a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white transition-colors">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white absolute top-full left-0 w-full shadow-2xl animate-fade-in-down">
+            <div class="flex flex-col p-6 space-y-4">
+                <a href="#" class="mobile-link text-[#003B73] text-lg font-bold border-b border-gray-100 pb-2">Home</a>
+                <a href="https://whooshield.com/clients/knowledgebase" class="mobile-link text-[#003B73] text-lg font-bold border-b border-gray-100 pb-2">Knowledgebase</a>
+                <a href="#" class="mobile-link text-[#003B73] text-lg font-bold border-b border-gray-100 pb-2">Network Status</a>
+                <a href="#" class="mobile-link text-[#003B73] text-lg font-bold border-b border-gray-100 pb-2">Affiliates</a>
+                <a href="https://whooshield.com/clients/contact.php" class="mobile-link text-[#003B73] text-lg font-bold border-b border-gray-100 pb-2">Contact Us</a>
+                <a href="https://whooshield.com/clients/login" class="mobile-link text-[#003B73] text-lg font-bold border-b border-gray-100 pb-2">Log In</a>
+                <a href="https://whooshield.com/clients/register.php" class="mobile-link text-[#003B73] text-lg font-bold border-b border-gray-100 pb-2">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen min-h-[600px] flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://i.imgur.com/J9v97iV.png" alt="Modern Home" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#003B73]/90 to-[#003B73]/40"></div>
+        </div>
+
+        <div class="container mx-auto px-4 md:px-6 relative z-10">
+            <div class="max-w-3xl text-white">
+                <div class="flex items-center space-x-2 mb-6">
+                    <span class="bg-secondary text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded">
+                        Cybersecurity Solutions
+                    </span>
+                </div>
+                <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-6">
+                    Your Security <br>
+                    <span class="text-secondary">In A Digital Age.</span>
+                </h1>
+                <p class="text-lg md:text-xl opacity-90 mb-8 max-w-xl leading-relaxed">
+                     WhooShield is your all-in-one security marketplace, combining SSL, VPN, monitoring, and backup solutions to safeguard your digital assets. Trusted protection, streamlined for businesses of every size.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+<select 
+    class="bg-secondary hover:bg-[#E07B1A] text-center text-white px-8 py-4 rounded font-bold uppercase tracking-wider transition-all shadow-xl hover:-translate-y-1"
+    onchange="window.location.href=this.value;">
+    <option selected disabled>Shop Products</option>
+    <option value="https://whooshield.com/clients/store/nordvpn">VPN</option>
+    <option value="https://whooshield.com/clients/store/360monitoring">Site Monitoring</option>
+    <option value="https://whooshield.com/clients/store/codeguard">Automated Backups</option>
+    <option value="https://whooshield.com/clients/store/ssl-certificates">SSL Certificates</option>
+    <option value="https://whooshield.com/clients/store/sitelock">Malware Protection</option>
+    <option value="https://whooshield.com/clients/store/professional-email">Email App</option>
+    <option value="https://whooshield.com/clients/store/email-services">Spam Filtering</option>
+</select>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-2xl font-bold uppercase tracking-[0.3em] text-[#0056B3] mb-4">Why Choose WhooShield</h2>
+                <h3 class="text-3xl md:text-5xl font-extrabold text-primary leading-tight">SSL certificates, VPNs, malware protection, backups, and monitoring. <br> Everything you need in one place.</h3>
+
+
+				
+                <div class="mt-8">
+                    <a href="#" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block">Featured Products</a>
+                </div>
+            </div>
+
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                <!-- Digicert Card -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+                    <div class="mb-4">
+                        <img loading="lazy" decoding="async" width="100" height="100" src="https://whooshield.com/wp-content/uploads/2024/05/digicert.png" class="w-20 h-20 object-contain" alt="Digicert">
+                    </div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-3">Digicert</h2>
+                    <p class="text-gray-600 mb-4 flex-grow">SSL certificates that provide encrypted connections that allow data to be transmitted from a browser to a user.</p>
+                    <a href="https://whooshield.com/clients/store/ssl-certificates" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Browse products</a>
+                </div>
+
+                <!-- 360 Monitoring Card -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+                    <div class="mb-4">
+                        <img loading="lazy" decoding="async" width="100" height="100" src="https://whooshield.com/wp-content/uploads/2024/05/360-monitoring.png" class="w-20 h-20 object-contain" alt="360 Monitoring">
+                    </div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-3">360 Monitoring</h2>
+                    <p class="text-gray-600 mb-4 flex-grow">Website and server monitoring providing comprehensive analysis and oversight for you and your business.</p>
+                    <a href="https://whooshield.com/clients/store/360monitoring" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Browse products</a>
+                </div>
+
+                <!-- CodeGuard Card -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+                    <div class="mb-4">
+                        <img loading="lazy" decoding="async" width="100" height="100" src="https://whooshield.com/wp-content/uploads/2024/05/codeguard-2.png" class="w-20 h-20 object-contain" alt="CodeGuard">
+                    </div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-3">CodeGuard</h2>
+                    <p class="text-gray-600 mb-4 flex-grow">Protection for your website with daily automated backups. Protection against hackers, viruses and any threats.</p>
+                    <a href="https://whooshield.com/clients/store/codeguard" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Browse products</a>
+                </div>
+
+                <!-- NordVPN Card -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+                    <div class="mb-4">
+                        <img loading="lazy" decoding="async" width="100" height="100" src="https://whooshield.com/wp-content/uploads/2024/05/Nordvpn.png" class="w-20 h-20 object-contain" alt="NordVPN">
+                    </div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-3">NordVPN</h2>
+                    <p class="text-gray-600 mb-4 flex-grow">VPN service that ensures online safety and protection. Fast, secure, and reliable against any online threats.</p>
+                    <a href="https://whooshield.com/clients/store/nordvpn" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Browse products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                <!-- Email spam filtering Card -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+                    <div class="mb-4">
+                        <img loading="lazy" decoding="async" width="100" height="100" src="https://whooshield.com/wp-content/uploads/2024/05/Spam-experts.png" class="w-20 h-20 object-contain" alt="Email spam filtering">
+                    </div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-3">Email spam filtering</h2>
+                    <p class="text-gray-600 mb-4 flex-grow">Spam filtering that blocks viruses, malware and spam before they ever reach your inbox and your data.</p>
+                    <a href="https://whooshield.com/clients/store/email-services" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Browse products</a>
+                </div>
+
+                <!-- OX APP SUITE Card -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+                    <div class="mb-4">
+                        <img loading="lazy" decoding="async" width="100" height="100" src="https://whooshield.com/wp-content/uploads/2024/05/OX-app-suite.png" class="w-20 h-20 object-contain" alt="OX APP SUITE">
+                    </div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-3">OX APP SUITE</h2>
+                    <p class="text-gray-600 mb-4 flex-grow">OX App Suite is a powerful email and productivity app built for any-size business and is budget friendly.</p>
+                    <a href="https://whooshield.com/clients/store/professional-email" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Browse products</a>
+                </div>
+
+                <!-- SiteLock Card -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+                    <div class="mb-4">
+                        <img loading="lazy" decoding="async" width="100" height="100" src="https://whooshield.com/wp-content/uploads/2024/05/site-lock.png" class="w-20 h-20 object-contain" alt="SiteLock">
+                    </div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-3">SiteLock</h2>
+                    <p class="text-gray-600 mb-4 flex-grow">Website security and Malware protection for your website and automatic scanning for your website.</p>
+                    <a href="https://whooshield.com/clients/store/sitelock" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Browse products</a>
+                </div>
+
+                <!-- SocialBee Card -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+                    <div class="mb-4">
+                        <img loading="lazy" decoding="async" width="100" height="100" src="https://whooshield.com/wp-content/uploads/2026/01/social.jpg" class="w-20 h-20 object-contain" alt="SocialBee">
+                    </div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-3">SocialBee</h2>
+                    <p class="text-gray-600 mb-4 flex-grow">SocialBee, the easiest way to manage all of your social media accounts. Create, schedule, publish, analyze, engage, and collaborate without wasting a second of your time.</p>
+                    <a href="https://whooshield.com/clients/store/SocialBee" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Browse products</a>
+                </div>
+            </div>
+
+    <!-- news -->
+   <section id="news" class="py-20 bg-white w-full">
+  <h2 class="text-3xl font-bold text-primary mb-12 text-center">Read all our latest news. We offer VPN and SSL certificates amongst other high level web security options.</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 px-6 lg:px-20 w-full">
+    
+    <!-- Article 1 -->
+    <article class="p-6 border border-gray-200 rounded-xl bg-gray-50 hover:shadow-lg transition transform hover:-translate-y-2">
+      <h3 class="text-xl font-bold text-primary mb-3">
+        <a href="https://whooshield.com/malware-protection-clean-your-website-now/" class="hover:text-secondary">
+          Your website might be infected with malware, learn how to clean it.
+        </a>
+      </h3>
+      <p class="text-gray-600 text-sm mb-4">
+        Your website might be infected with malware, learn how to clean it with proper malware protection.
+      </p>
+      <div class="flex justify-between text-xs text-gray-500 mb-2">
+        <span>March 18, 2025</span>
+        <span>No Comments</span>
+      </div>
+      <a href="https://whooshield.com/malware-protection-clean-your-website-now/" class="text-secondary font-semibold hover:underline">
+        Read More »
+      </a>
+    </article>
+
+    <!-- Article 2 -->
+    <article class="p-6 border border-gray-200 rounded-xl bg-gray-50 hover:shadow-lg transition transform hover:-translate-y-2">
+      <h3 class="text-xl font-bold text-primary mb-3">
+        <a href="https://whooshield.com/virtual-private-network/" class="hover:text-secondary">
+          Understanding a Virtual Private Network (VPN): A Comprehensive Guide
+        </a>
+      </h3>
+      <p class="text-gray-600 text-sm mb-4">
+        In an increasingly digital world, online privacy and security have become top priorities for both individuals and businesses.
+      </p>
+      <div class="flex justify-between text-xs text-gray-500 mb-2">
+        <span>August 26, 2024</span>
+        <span>No Comments</span>
+      </div>
+      <a href="https://whooshield.com/virtual-private-network/" class="text-secondary font-semibold hover:underline">
+        Read More »
+      </a>
+    </article>
+
+    <!-- Article 3 -->
+    <article class="p-6 border border-gray-200 rounded-xl bg-gray-50 hover:shadow-lg transition transform hover:-translate-y-2">
+      <h3 class="text-xl font-bold text-primary mb-3">
+        <a href="https://whooshield.com/domains/" class="hover:text-secondary">
+          Domains: Elevate Your Online Presence with Whooshield.com
+        </a>
+      </h3>
+      <p class="text-gray-600 text-sm mb-4">
+        In today’s digital world, having the right domain name is essential for any business.
+      </p>
+      <div class="flex justify-between text-xs text-gray-500 mb-2">
+        <span>July 29, 2024</span>
+        <span>No Comments</span>
+      </div>
+      <a href="https://whooshield.com/domains/" class="text-secondary font-semibold hover:underline">
+        Read More »
+      </a>
+    </article>
+
+    <!-- Article 4 -->
+    <article class="p-6 border border-gray-200 rounded-xl bg-gray-50 hover:shadow-lg transition transform hover:-translate-y-2">
+      <h3 class="text-xl font-bold text-primary mb-3">
+        <a href="https://whooshield.com/web-application-firewall/" class="hover:text-secondary">
+          Application-based Firewall
+        </a>
+      </h3>
+      <p class="text-gray-600 text-sm mb-4">
+        The Importance of a Web Application Firewall in Network Security. In today’s digital age, securing your network is more crucial than ever.
+      </p>
+      <div class="flex justify-between text-xs text-gray-500 mb-2">
+        <span>May 15, 2024</span>
+        <span>No Comments</span>
+      </div>
+      <a href="https://whooshield.com/web-application-firewall/" class="text-secondary font-semibold hover:underline">
+        Read More »
+      </a>
+    </article>
+
+    <!-- Article 5 -->
+    <article class="p-6 border border-gray-200 rounded-xl bg-gray-50 hover:shadow-lg transition transform hover:-translate-y-2">
+      <h3 class="text-xl font-bold text-primary mb-3">
+        <a href="https://whooshield.com/website-monitoring/" class="hover:text-secondary">
+          Website Monitoring
+        </a>
+      </h3>
+      <p class="text-gray-600 text-sm mb-4">
+        Secure Your Website with Whooshield’s Advanced Monitoring Service. In today’s digital age, maintaining the security of your website is critical.
+      </p>
+      <div class="flex justify-between text-xs text-gray-500 mb-2">
+        <span>April 17, 2024</span>
+        <span>No Comments</span>
+      </div>
+      <a href="https://whooshield.com/website-monitoring/" class="text-secondary font-semibold hover:underline">
+        Read More »
+      </a>
+    </article>
+
+    <!-- Article 6 -->
+    <article class="p-6 border border-gray-200 rounded-xl bg-gray-50 hover:shadow-lg transition transform hover:-translate-y-2">
+      <h3 class="text-xl font-bold text-primary mb-3">
+        <a href="https://whooshield.com/ssl/" class="hover:text-secondary">
+          SSL
+        </a>
+      </h3>
+      <p class="text-gray-600 text-sm mb-4">
+        Secure Your Website with Whooshield SSL Certificates. Is your website’s security a top priority?
+      </p>
+      <div class="flex justify-between text-xs text-gray-500 mb-2">
+        <span>April 10, 2024</span>
+        <span>No Comments</span>
+      </div>
+      <a href="https://whooshield.com/ssl/" class="text-secondary font-semibold hover:underline">
+        Read More »
+      </a>
+    </article>
+
+  </div>
+</section>
+
+    
+
+
+
+    <!-- Footer -->
+<footer id="contact" class="bg-[#001D3D] text-white pt-20 pb-10">
+  <div class="container mx-auto px-6 lg:px-12">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+      
+      <!-- Logo + About Us -->
+      <div>
+        <div class="flex items-center space-x-3 mb-6">
+          <img src="https://whooshield.com/wp-content/uploads/2024/05/whooshield-logo-768x907.png" 
+               alt="Whooshield Logo" 
+               class="h-16 w-auto">
+          <span class="text-2xl font-extrabold tracking-tight">
+            WHOO<span class="text-secondary">SHIELD</span>
+          </span>
+        </div>
+        <p class="text-white/70 leading-relaxed">
+          Whooshield is a web service and cybersecurity marketplace that provides clients with fully integrated web solutions designed to equip any business with the necessary online security features aimed at protecting subjects from any digital threats. At Whooshield, we focus on quality online security at an affordable price. Join us today and fortify your online presence. Get your VPN and SSL services under one umbrella. 
+        </p>
+        <p class="text-xs text-white/40 mt-4">Website design by <a href="https://www.starcom.co.za" class="text-white/40 hover:text-white">www.starcom.co.za</a></p>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="text-lg font-bold mb-6 border-l-4 border-secondary pl-4">Services</h4>
+        <ul class="space-y-4 text-white/70">
+          <li>VPN</li>
+          <li>SSL Certificates</li>
+          <li>Site Monitoring</li>
+          <li>Automated Backups</li>
+          <li>Email Spam Filtering</li>
+          <li>Email App</li>
+          <li>Malware Protection</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-lg font-bold mb-6 border-l-4 border-secondary pl-4">Contact Us</h4>
+        <ul class="space-y-4 text-white/70">
+          <li class="flex items-center space-x-3">
+            <i class="fa-solid fa-envelope text-secondary"></i>
+            <span>info@whooshield.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="pt-10 border-t border-white/10 flex justify-center items-center text-white/40 text-sm">
+  <p>© 2026 All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <script>
+        // Navbar scroll effect
+        const nav = document.getElementById('main-nav');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled');
+                mobileMenuBtn.classList.replace('text-white', 'text-[#003B73]');
+            } else {
+                nav.classList.remove('nav-scrolled');
+                mobileMenuBtn.classList.replace('text-[#003B73]', 'text-white');
+            }
+        });
+
+        // Mobile menu toggle
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.classList.replace('fa-xmark', 'fa-bars');
+            } else {
+                icon.classList.replace('fa-bars', 'fa-xmark');
+            }
+        });
+
+        // Close mobile menu on link click
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuBtn.querySelector('i').classList.replace('fa-xmark', 'fa-bars');
+            });
+        });
+
+        // Initialize Swiper
+        const swiper = new Swiper('#heroSlider', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            speed: 500,
+        });
+    </script>
+</body>
+
+</html>
